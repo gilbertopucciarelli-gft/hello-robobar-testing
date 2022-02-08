@@ -27,8 +27,7 @@ public class HelloTestRobobarTest {
     private By AgeInput = By.id("ageInput");
     private By SuccessButton = By.cssSelector(".btn-success");
     private By AgeAlert = By.cssSelector(".alert > .ng-binding");
-
-
+    
     @BeforeEach
     public void setUp() {
         driver = new ChromeDriver();
@@ -50,7 +49,7 @@ public class HelloTestRobobarTest {
     }
 
     @Test
-    public void twoxRoboColaCheckout() {
+    public void onexRoboColaCheckout() {
         driver.get("http://localhost:3000/");
         driver.manage().window().setSize(new Dimension(1847, 935));
         driver.findElement(RoboColaIncrementButton).click();
